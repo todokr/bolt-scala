@@ -1,6 +1,7 @@
 # Bolt Scala Example
 
-A sample slack bot app implementation with [Slack SDK for Java](https://slack.dev/java-slack-sdk/).
+A [Bolt for Java](https://slack.dev/java-slack-sdk/guides/getting-started-with-bolt) app example, building as executable binary with [GraalVM native-image](https://www.graalvm.org/docs/reference-manual/native-image/).  
+
 
 ## How to build
 
