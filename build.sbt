@@ -10,6 +10,7 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       "com.slack.api" % "bolt-jetty" % "1.0.1",
       scalaTest % Test
-    )
+    ),
+    graalVMNativeImageOptions ++= Seq("--no-fallback")
   )
-  .enablePlugins(JavaServerAppPackaging)
+  .enablePlugins(GraalVMNativeImagePlugin)

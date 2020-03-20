@@ -1,4 +1,3 @@
-import com.slack.api.app_backend.views.response.InputBlockResponse
 import com.slack.api.bolt.App
 import com.slack.api.bolt.handler.builtin.SlashCommandHandler
 import com.slack.api.bolt.jetty.SlackAppServer
@@ -8,10 +7,8 @@ object Main {
 
   def main(args: Array[String]): Unit = {
     val app = new App()
-
     app.command("/hello", helloHandler)
     app.command("/echo", echoHandler)
-
     val server = new SlackAppServer(app);
     server.start()
   }
